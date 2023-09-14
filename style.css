@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+:root {
+  --Cyan: hsl(179, 62%, 43%);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+  --Light-Gray: hsl(204, 43%, 93%);
+  --Light-Gray-a: hsla(204, 43%, 93%, 0.6);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+  --White: hsl(0, 0%, 100%);
+  /* sağ div 49BEBD */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Light-Gray);
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.container {
+  margin: auto 3rem;
+  width: 50%;
+  border-radius: 10px;
+  overflow: hidden;
+  padding-right: 2rem;
+}
+
+.top-section {
+  background-color: var(--White);
+  display: flex;
+  width: auto;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 3rem;
+}
+
+.top-section h2 {
+  color: var(--Cyan);
+}
+
+.top-section h3 {
+  margin-top: 1rem;
+  color: var(--Bright-Yellow);
+}
+
+.top-section p {
+  color: var(--Grayish-Blue);
+  line-height: 1.5rem;
+}
+
+.bottom-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: auto;
+}
+
+.sign-up {
+  background-color: var(--Cyan);
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sign-up h3 {
+  color: var(--Light-Gray);
+}
+
+.sign-up .price {
+  display: flex;
+  align-items: center;
+}
+
+.sign-up .price p {
+  color: var(--Light-Gray-a);
+}
+
+.sign-up span {
+  color: var(--Light-Gray);
+  font-size: 2rem;
+  font-weight: 700;
+  margin-right: 1rem;
+}
+
+.sign-up p {
+  color: var(--Light-Gray);
+}
+
+.info {
+  background-color: #66d6d5;
+  padding: 3rem;
+}
+
+.info h3 {
+  color: var(--Light-Gray);
+  margin-bottom: 1rem;
+}
+
+.info ul li {
+  color: hsla(204, 43%, 93%, 0.8);
+  line-height: 1.4;
+  list-style: none;
+}
+
+.btn {
+  width: 100%;
+  background-color: var(--Bright-Yellow);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  color: var(--Light-Gray);
+  padding: 1rem;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+
+.btn:hover {
+  background-color: hsl(71, 100%, 52%);
+  color: #666;
+}
+
+.btn:active {
+  transform: scale(0.8);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 876px) {
+  .container {
+    width: auto;
+  }
+}
